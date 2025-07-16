@@ -24,7 +24,7 @@ if st.button("Check"):
         prediction = model.predict(input_features)
 
         # Display result
-        if prediction[0] == 0:
-            st.success("🚫This email is classified as **spam (Not Spam)**.")
+        if prediction[0] == 1:
+            st.success("✅ email is classified as **ham ( safe)**.")
         else:
-            st.error(" ✅This email is classified as **Ham**.")
+            st.error(" 🚫This email is classified as **Hspam**.")
