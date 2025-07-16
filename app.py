@@ -27,4 +27,4 @@ if st.button("Check"):
         if prediction[0] == 1:
             st.success("✅ email is classified as **ham ( safe)**.")
         else:
-            st.error(" 🚫This email is classified as **Hspam**.")
+            st.error(" 🚫This email is classified as **spam**.")
